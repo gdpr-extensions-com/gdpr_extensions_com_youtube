@@ -1,0 +1,103 @@
+plugin.tx_gdprextensionscomyoutube_gdpryoutube {
+    view {
+        templateRootPaths.0 = EXT:gdpr_extensions_com_youtube/Resources/Private/Templates/
+        templateRootPaths.1 = {$plugin.tx_gdprextensionscomyoutube_gdpryoutube.view.templateRootPath}
+        partialRootPaths.0 = EXT:gdpr_extensions_com_youtube/Resources/Private/Partials/
+        partialRootPaths.1 = {$plugin.tx_gdprextensionscomyoutube_gdpryoutube.view.partialRootPath}
+        layoutRootPaths.0 = EXT:gdpr_extensions_com_youtube/Resources/Private/Layouts/
+        layoutRootPaths.1 = {$plugin.tx_gdprextensionscomyoutube_gdpryoutube.view.layoutRootPath}
+    }
+    persistence {
+        storagePid = {$plugin.tx_gdprextensionscomyoutube_gdpryoutube.persistence.storagePid}
+        #recursive = 1
+    }
+    features {
+        #skipDefaultArguments = 1
+        # if set to 1, the enable fields are ignored in BE context
+        ignoreAllEnableFieldsInBe = 0
+    }
+    mvc {
+        #callDefaultActionIfActionCantBeResolved = 1
+    }
+}
+
+plugin.tx_gdprextensionscomyoutube_gdprcookiewidget {
+    view {
+        templateRootPaths.0 = EXT:gdpr_extensions_com_youtube/Resources/Private/Templates/
+
+    }
+    persistence {
+
+    }
+    features {
+
+    }
+    mvc {
+        #callDefaultActionIfActionCantBeResolved = 1
+    }
+}
+
+page = PAGE
+page.999 < tt_content.list.20.gdprextensionscomyoutube_gdprcookiewidget
+
+
+config.tx_extbase {
+    persistence {
+        classes {
+            GdprExtensionsCom\GdprExtensionsComYoutube\Domain\Model\GdprManager {
+                mapping {
+                    tableName = tx_gdprextensionscomyoutube_domain_model_gdprmanager
+                }
+            }
+        }
+    }
+}
+
+# these classes are only used in auto-generated templates
+plugin.tx_gdprextensionscomyoutube._CSS_DEFAULT_STYLE (
+    textarea.f3-form-error {
+        background-color: #FF9F9F;
+        border: 1px #FF0000 solid;
+    }
+
+    input.f3-form-error {
+        background-color: #FF9F9F;
+        border: 1px #FF0000 solid;
+    }
+
+    .tx-gdpr-extensions-com-youtube table {
+        border-collapse: separate;
+        border-spacing: 10px;
+    }
+
+    .tx-gdpr-extensions-com-youtube table th {
+        font-weight: bold;
+    }
+
+    .tx-gdpr-extensions-com-youtube table td {
+        vertical-align: top;
+    }
+
+    .typo3-messages .message-error {
+        color: red;
+    }
+
+    .typo3-messages .message-ok {
+        color: green;
+    }
+)
+
+# Module configuration
+module.tx_gdprextensionscomyoutube {
+    persistence {
+        storagePid = {$module.tx_gdprextensionscomyoutube_gdprmanager.persistence.storagePid}
+    }
+    view {
+        templateRootPaths.0 = EXT:gdpr_extensions_com_youtube/Resources/Private/Backend/Templates/
+        templateRootPaths.1 = {$module.tx_gdprextensionscomyoutube_gdprmanager.view.templateRootPath}
+        partialRootPaths.0 = EXT:gdpr_extensions_com_youtube/Resources/Private/Backend/Partials/
+        partialRootPaths.1 = {$module.tx_gdprextensionscomyoutube_gdprmanager.view.partialRootPath}
+        layoutRootPaths.0 = EXT:gdpr_extensions_com_youtube/Resources/Private/Backend/Layouts/
+        layoutRootPaths.1 = {$module.tx_gdprextensionscomyoutube_gdprmanager.view.layoutRootPath}
+    }
+}
