@@ -1,7 +1,7 @@
 <?php
 
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'gdpr-extensions-com-youtube-2clicksolution',
+    'title' => 'GDPR-Extensions.com - Youtube 2xClick Solution',
     'description' => 'The GDPR Youtube 2 Click Solution, brought to you by GDPR-Extensions.com, is a feature-rich solution designed to empower website owners in effectively managing Youtube videos and bolstering user privacy.',
     'category' => 'plugin',
     'author' => 'GDPR-Extensions.com Team',
