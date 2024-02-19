@@ -31,4 +31,15 @@ class GdprManagerRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
         $querySettings->setRespectStoragePage(false);
         $this->setDefaultQuerySettings($querySettings);
     }
+
+    public function fetchGdprManagerWithoutReviews(string $q = '')
+    {
+        $query = $this->createQuery();
+        return $query->matching(
+            $query->logicalNot(
+                $query->like('extension_title', '%' . 'review' . '%')
+            )
+        )->execute();
+    }
+
 }

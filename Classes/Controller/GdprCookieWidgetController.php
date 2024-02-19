@@ -40,6 +40,11 @@ class GdprCookieWidgetController extends \TYPO3\CMS\Extbase\Mvc\Controller\Actio
 
         $result = $queryBuilder->execute()->fetchAssociative();
 
+        if ($result["cookie_widget_image"] && strpos($result["cookie_widget_image"], '/') !== 0) {
+            $result["cookie_widget_image"] = '/' . $result["cookie_widget_image"];
+        }
+
+
         $queryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)->getQueryBuilderForTable('tx_gdprextensionscomyoutube_domain_model_gdprmanager');
         $gdprSettingYoutube = $queryBuilder
             ->select('*')
