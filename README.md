@@ -1,86 +1,36 @@
-# GDPR-Extensions.com - Youtube 2-Click Solution for TYPO3
+# GDPR-Extensions-com - Youtube 2xClick Solution
 
-## Overview
+The GDPR-Extensions-com - Youtube 2xClick Solution allows you to add content elements and as many YouTube videos as you want on your website without being flagged by Cookie scanners!
 
-**Extension Name:** gdpr-extensions-com-youtube-2clicksolution
+This extension works in parallel with our GDPR-extensions.com Consent Manager, where your website viewer can update their cookie preferences at any time!
 
-**Version Compatibility:** v11.0 - v12.0
+## Without GDPR-extensions.com Consent Manager:
 
-**PHP Requirements:** v8.0
+- The YouTube cookie will not be created, and the user will not be able to view the video until they consent to the content mask that you style and hide the video.
+- Once the user has consented, they are able to view the YouTube video, the cookie is created, and the default session duration is 30 days.
+- The user will not be able to update their cookie preferences, and their data will be saved until the session has expired.
 
-The GDPR Youtube 2 Click Solution, brought to you by GDPR-Extensions.com, is a feature-rich solution designed to empower website owners in effectively managing YouTube videos and bolstering user privacy.
+## With GDPR-extensions.com Consent Manager:
 
-## Installation
+The GDPR-Extensions-com - Consent Manager Typo3 extension is powered by the gpdr-extensions.com dashboard. This scans your website and auto-detects cookies and external sources. It provides you with a content element “Consent Manager” that you can add to your website where all cookies are listed, and users can manage the YouTube 2 Click cookie at any time. Website viewers will be able to view the Consent Manager anytime by clicking on the cookie widget, which you can always customize its styling, language content, and position.
 
-The GDPR-Extensions.com YouTube 2 Click Solution is available for TYPO3 and can be installed via Composer or manually.
+## How it Works?
 
-### Composer-based Installation
+1. Install GDPR-Extensions-com - Youtube 2xClick Solution Typo3 Extension.
+2. Once the extension is successfully installed, a new tab will appear on your Typo3 project “GDPR-Extensions-Com Admin”.
+3. You can view the extension customization settings.
+4. Update Content: You can update the content heading, body, etc., that you want to show to your website viewers on the content mask hiding the YouTube video.
+5. Update Styling: You can also add additional styling to fit your website theme.
+6. Add YouTube Content Element: Visit the page on your project where you want to show reviews.
+   - Add content element.
+   - You should find a section “GDPR-Extensions-com”.
+   - Select “YouTube”.
+   - Enter your YouTube video URL.
+   - Apply additional video customization such as autoplay, auto captions, etc.
+   - Apply additional styling.
+   - Save and publish the page edits.
+7. Enjoy GDPR Conform YouTube Solution!
 
-1. **Require the Package:**
-   Use Composer to require the package by running the following command in your TYPO3 installation's root directory:
-   ```shell
-   composer req gdpr_extensions_com/gdpr-extensions-com-youtube
+## Check out other extensions developed by GDPR-extensions.com to add Google, Bing Maps on your website, Google Reviews, Vimeo content, and more!
 
-## Verify Installation
-Ensure that the extension is listed in the Installed Extensions section of the TYPO3 backend.
-
-## Non-Composer-based Installation
-
-### Download the Extension
-Obtain the extension .zip file from the TYPO3 Extension Repository (TER) or the provider's website.
-
-### Upload and Unpack
-In the TYPO3 backend, navigate to 'Extensions', choose 'Upload Extension' and upload the .zip file. TYPO3 will automatically unpack and install the extension.
-
-### Activate the Extension
-Locate the 'GDPR YouTube 2 Click Solution' in the list of extensions and activate it.
-
-### Verify Installation
-Confirm that the extension is active and visible in the Installed Extensions list in the TYPO3 backend.
-
-## GDPR-Extensions-Com Admin
-After installing the 'GDPR YouTube 2 Click Solution' extension, configure it through the 'GDPR-Extensions-Com Admin' module in the TYPO3 backend.
-
-### Accessing the GDPR-Extensions-Com Admin
-Navigate to GDPR-Extensions-Com Admin Module: In the TYPO3 backend, locate and click on the 'GDPR-Extensions-Com Admin' tab in the left sidebar to access the management interface.
-
-### Overview of Options
-The GDPR-Extensions-Com Admin provides a user-friendly interface where you can configure settings related to 2x click solution.
-
-## Customizing GDPR Content Elements
-
-### Content Tab
-- **Heading:** Enter the text for the consent overlay heading.
-- **Button Text:** Specify the text for the consent button.
-- **Content:** Provide the detailed content or message for the consent requirement.
-
-### Content Styling Tab
-- **Background Image:** Option to use a custom background image for the overlay.
-- **Button Color, Text Color, Button Text Color:** Customize the colors for better visibility and aesthetics.
-- **Button Shape:** Choose from predefined button shapes.
-
-## Inserting a New GDPR-compliant YouTube Video Element
-
-### Create New Content Element
-Navigate to the page, click on 'Create new content element'.
-
-### Select Plugin
-Choose 'GDPR-Extensions.com - YouTube Videoplayer'.
-
-## Configuring the Video Element
-- **Video URL:** Paste the embed URL of the YouTube video.
-- **Video Options:** Configure autoplay, captions, annotations, keyboard control, and fullscreen options.
-
-## Frontend Display
-The GDPR-Extensions.com - YouTube Videoplayer plugin provides a 2-click solution that is elegantly displayed on the frontend, aligning with GDPR requirements.
-
-### Implementing the 2-Click Consent Overlay
-When a YouTube video is embedded on your website using the GDPR-Extensions.com YouTube Videoplayer plugin, visitors will encounter a consent overlay before the video plays. This overlay serves two essential purposes:
-- **Informs Users:** It provides users with information about the use of cookies and the necessity for their consent before they can fully utilize the website's features, including video playback.
-- **Seeks Consent:** It seeks the user's consent in a clear and unambiguous manner, which is a key requirement of GDPR for websites that serve users in the European Union.
-
-### Consent Overlay Features
-- **Disclaimer Header:** A bold header stating "Disclaimer" draws immediate attention to the importance of the overlay's content.
-- **Message Body:** The body of the message explains the need for cookies, distinguishing between those necessary for website functionality and those used for statistics and user experience improvement.
-- **Accept Button:** A prominent 'Accept' button allows users to give their consent with just one click.
-
+Any cookie or GDPR scanners will not show your YouTube content as an external source or detect any GDPR issues related to this content.
