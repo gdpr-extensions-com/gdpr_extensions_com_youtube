@@ -16,12 +16,12 @@ The GDPR-Extensions-com - Consent Manager Typo3 extension is powered by the gpdr
 
 ## How it Works?
 
-1. Install GDPR-Extensions-com - Youtube 2xClick Solution Typo3 Extension.
-2. Once the extension is successfully installed, a new tab will appear on your Typo3 project “GDPR-Extensions-Com Admin”.
-3. You can view the extension customization settings.
-4. Update Content: You can update the content heading, body, etc., that you want to show to your website viewers on the content mask hiding the YouTube video.
-5. Update Styling: You can also add additional styling to fit your website theme.
-6. Add YouTube Content Element: Visit the page on your project where you want to show reviews.
+- Install GDPR-Extensions-com - Youtube 2xClick Solution Typo3 Extension.
+- Once the extension is successfully installed, a new tab will appear on your Typo3 project “GDPR-Extensions-Com Admin”.
+- You can view the extension customization settings.
+- Update Content: You can update the content heading, body, etc., that you want to show to your website viewers on the content mask hiding the YouTube video.
+- Update Styling: You can also add additional styling to fit your website theme.
+- Add YouTube Content Element: Visit the page on your project where you want to show reviews.
    - Add content element.
    - You should find a section “GDPR-Extensions-com”.
    - Select “YouTube”.
@@ -29,7 +29,7 @@ The GDPR-Extensions-com - Consent Manager Typo3 extension is powered by the gpdr
    - Apply additional video customization such as autoplay, auto captions, etc.
    - Apply additional styling.
    - Save and publish the page edits.
-7. Enjoy GDPR Conform YouTube Solution!
+- Enjoy GDPR Conform YouTube Solution!
 
 ## Check out other extensions developed by GDPR-extensions.com to add Google, Bing Maps on your website, Google Reviews, Vimeo content, and more!
 
