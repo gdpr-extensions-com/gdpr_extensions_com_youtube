@@ -72,6 +72,7 @@ class GdprYoutubeController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionCont
 
         $this->view->assign('YoutubeData', $this->contentObject->data);
         $this->view->assign('YoutubeSettings', $settings);
+        $this->view->assign('rootPid', $GLOBALS['TSFE']->site->getRootPageId());
         return $this->htmlResponse();
     }
 }

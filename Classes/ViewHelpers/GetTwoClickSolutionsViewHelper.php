@@ -98,19 +98,25 @@ class GetTwoClickSolutionsViewHelper extends AbstractViewHelper
                 ])
                 ->execute();
         }
-        $gdprManagers = $this->gdprManagerRepository->fetchGdprManagerWithoutReviews()->toArray();
+        $queryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)->getQueryBuilderForTable('tx_gdprextensionscomyoutube_domain_model_gdprmanager');
+
+        $gdprManagers = $queryBuilder
+            ->select('*')
+            ->from('tx_gdprextensionscomyoutube_domain_model_gdprmanager')
+            ->where(
+                $queryBuilder->expr()->notLike('extension_title',
+                    $queryBuilder->createNamedParameter('%' . $queryBuilder->escapeLikeWildcards('review') . '%')
+                )
+            )
+            ->execute()
+            ->fetchAll();
 
         $normalizedGdprManagers = [];
         foreach ($gdprManagers as $gdprManager) {
-
-            // Clean properties should be an associative array which can be JSON encoded.
-            if (is_array($gdprManager->_getCleanProperties())) {
-                $properties = $gdprManager->_getCleanProperties();
-                // Use 'google_reviewlisting' as the key in the normalizedGdprManagers array
-                $normalizedGdprManagers[$properties['extensionKey']] = $properties;
+            if(array_key_exists($gdprManager['extension_key'], $extensionNames)) {
+                $normalizedGdprManagers[$gdprManager['extension_key']] = $gdprManager;
             }
         }
-
         $jsonString = json_encode($normalizedGdprManagers);
 
         return $jsonString;

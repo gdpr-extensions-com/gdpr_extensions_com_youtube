@@ -504,7 +504,6 @@
         for (let i = 0; i < checkboxes.length; i++) {
         if (checkboxes[i].checked == true) {
         let service = checkboxes[i].parentNode.parentNode.nextElementSibling.getAttribute('data-2click-service'); // get service name from iframe
-        debugger;
         setConsentStatus(service, '1');
         }
         }
@@ -530,10 +529,10 @@
         }
 
         x = document.querySelectorAll('iframe[data-2click-service="' + type + '"]');
-        // debugger
+     
         for (i = 0; i < x.length; i++) {
 
-        // debugger
+
         let serviceType = x[i].getAttribute("data-2click-service");
         if(serviceType === 'google_reviewlisting'){
         if(i == 0){
@@ -542,14 +541,14 @@
         mapDiv.id = "map" + i;
         mapDiv.className = "map";
         parent.parentNode.insertBefore(mapDiv, parent.nextSibling)
-        // debugger
+
         loadMapScript(x[i].nextElementSibling);
         }
         else {
         initMap((x[i].nextElementSibling));
         }
         }
-        // debugger;
+        
         x[i].src = x[i].getAttribute("data-src");
         }
 
@@ -593,7 +592,6 @@
         var x = document.querySelectorAll('iframe[data-2click-service="' + type + '"]');
         for (i = 0; i < x.length; i++) {
         let dummy = x[i].innerHTML;
-        // debugger
 
         x[i].src = ''; // Disabling the iframe by setting src as empty
         if(type == 'google_reviewlisting'){
@@ -617,7 +615,7 @@
         }
 
         const loadMapScript = function (parent) {
-        // debugger;
+        
         const mapScript = document.createElement("script");
         const body = document.querySelector("body");
         const mapsApiKey = document.getElementById("mapApiKey").innerText;
@@ -646,7 +644,7 @@
         var firstKey = Object.keys(latLongData)[0];
         var firstLocation = latLongData[Object.keys(latLongData)[0]];
 
-        // debugger;
+        
 
         const zoomButton = 1;
         const satelliteView = 'SATELLITE';
@@ -657,7 +655,7 @@
         SATELLITE: google.maps.MapTypeId.SATELLITE,
         TERRAIN: google.maps.MapTypeId.TERRAIN,
         };
-        // debugger;
+        
         const map = new google.maps.Map(parent, {
         zoom: 13,
         center: { lat: firstLocation.lat/1000000, lng: firstLocation.long/1000000 },

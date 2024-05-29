@@ -38,19 +38,14 @@ Locate the 'GDPR YouTube 2 Click Solution' in the list of extensions and activat
 ### Verify Installation
 Confirm that the extension is active and visible in the Installed Extensions list in the TYPO3 backend.
 
-## GDPR Manager
-After installing the 'GDPR YouTube 2 Click Solution' extension, configure it through the 'GDPR Manager' module in the TYPO3 backend.
+## GDPR-Extensions-Com Admin
+After installing the 'GDPR YouTube 2 Click Solution' extension, configure it through the 'GDPR-Extensions-Com Admin' module in the TYPO3 backend.
 
-### Accessing the GDPR Manager
-Navigate to GDPR Manager Module: In the TYPO3 backend, locate and click on the 'GDPR Manager' tab in the left sidebar to access the management interface.
+### Accessing the GDPR-Extensions-Com Admin
+Navigate to GDPR-Extensions-Com Admin Module: In the TYPO3 backend, locate and click on the 'GDPR-Extensions-Com Admin' tab in the left sidebar to access the management interface.
 
 ### Overview of Options
-The GDPR Manager provides a user-friendly interface where you can configure settings related to cookie consent and 2 click solution.
-
-## Configuring Cookie Widget
-- **Cookie Widget Image:** Upload a custom image for the cookie consent widget.
-- **Cookie Widget Position:** Select the position of the cookie widget on your website.
-- **Saving Settings:** After configuring your settings, click the 'Save' button to apply the changes.
+The GDPR-Extensions-Com Admin provides a user-friendly interface where you can configure settings related to 2x click solution.
 
 ## Customizing GDPR Content Elements
 

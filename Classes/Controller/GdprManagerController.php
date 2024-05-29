@@ -140,7 +140,8 @@ class GdprManagerController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionCont
 
         $result = $queryBuilder->execute()->fetchAssociative();
 
-
+        $youtubeData = $this->gdprManagerRepository->findByExtension_key('gdpr_extensions_com_youtube')->toArray();
+        return $this->redirect('edit',null,null,['gdprManager' => $youtubeData[0]]);
         $this->view->assign('uploadImageUrl', $uploadImageUrl);
         $this->view->assign('cookieWidgetData', $result);
         $gdprManagers = $this->gdprManagerRepository->findAll();
@@ -193,7 +194,7 @@ class GdprManagerController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionCont
      * @TYPO3\CMS\Extbase\Annotation\IgnoreValidation("gdprManager")
      * @return \Psr\Http\Message\ResponseInterface
      */
-    public function editAction(\GdprExtensionsCom\GdprExtensionsComVimeo\Domain\Model\GdprManager $gdprManager): \Psr\Http\Message\ResponseInterface
+    public function editAction(\GdprExtensionsCom\GdprExtensionsComYoutube\Domain\Model\GdprManager $gdprManager): \Psr\Http\Message\ResponseInterface
     {
         $siteFinder = GeneralUtility::makeInstance(SiteFinder::class);
         $sites = $siteFinder->getAllSites();
@@ -225,7 +226,7 @@ class GdprManagerController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionCont
      * @param \GdprExtensionsCom\GdprExtensionsComYoutube\Domain\Model\GdprManager $gdprManager
      * @return \Psr\Http\Message\ResponseInterface
      */
-    public function updateAction(\GdprExtensionsCom\GdprExtensionsComVimeo\Domain\Model\GdprManager $gdprManager) : \Psr\Http\Message\ResponseInterface
+    public function updateAction(\GdprExtensionsCom\GdprExtensionsComYoutube\Domain\Model\GdprManager $gdprManager) : \Psr\Http\Message\ResponseInterface
     {
         if($this->request->hasArgument('tx_gdprextensionscomyoutube_web_ggdprextensionscomyoutubegdprmanager')){
             $locationsData = $this->request->getArgument('tx_gdprextensionscomyoutube_web_ggdprextensionscomyoutubegdprmanager')['locations'];

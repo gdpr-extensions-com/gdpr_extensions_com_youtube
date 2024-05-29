@@ -82,7 +82,10 @@
 				<source>Cookie Widget Position</source>
 			</trans-unit>
 			<trans-unit id="tx_gdpr_extensions_com_youtube_gdpryoutube.name" resname="tx_gdpr_extensions_com_youtube_gdpryoutube.name">
-				<source>GDPR-Extensions.com - YouTube Videoplayer</source>
+				<source>YouTube</source>
+			</trans-unit>
+			<trans-unit id="tx_gdpr_extensions_com_youtube_gdpryoutube.name.tab" resname="tx_gdpr_extensions_com_youtube_gdpryoutube.name">
+				<source>GDPR-Extensions-Com</source>
 			</trans-unit>
 			<trans-unit id="tx_gdpr_extensions_com_youtube_gdpryoutube.description" resname="tx_gdpr_extensions_com_youtube_gdpryoutube.description">
 				<source></source>

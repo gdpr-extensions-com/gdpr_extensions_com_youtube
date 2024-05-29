@@ -37,8 +37,8 @@ plugin.tx_gdprextensionscomyoutube_gdprcookiewidget {
     }
 }
 
-page = PAGE
-page.999 < tt_content.list.20.gdprextensionscomyoutube_gdprcookiewidget
+#page = PAGE
+#page.999 < tt_content.list.20.gdprextensionscomyoutube_gdprcookiewidget
 
 
 config.tx_extbase {
