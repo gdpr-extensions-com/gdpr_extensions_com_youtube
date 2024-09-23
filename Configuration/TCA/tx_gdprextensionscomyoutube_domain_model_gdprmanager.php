@@ -16,7 +16,7 @@ return [
             'starttime' => 'starttime',
             'endtime' => 'endtime',
         ],
-        'searchFields' => 'heading,content,button_text,background_image_color,button_color,text_color,button_shape',
+        'searchFields' => 'heading,content,button_text,background_image_color,button_color,text_color,heading_color,button_shape',
         'iconfile' => 'EXT:gdpr_extensions_com_youtube/Resources/Public/Icons/tx_gdprextensionscomyoutube_domain_model_gdprmanager.gif'
     ],
     'types' => [
@@ -170,6 +170,17 @@ return [
             'exclude' => true,
             'label' => 'LLL:EXT:gdpr_extensions_com_youtube/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscomyoutube_domain_model_gdprmanager.button_color',
             'description' => 'LLL:EXT:gdpr_extensions_com_youtube/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscomyoutube_domain_model_gdprmanager.button_color.description',
+            'config' => [
+                'type' => 'input',
+                'size' => 30,
+                'eval' => 'trim',
+                'default' => ''
+            ],
+        ],
+        'heading_color' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:gdpr_extensions_com_youtube/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscomyoutube_domain_model_gdprmanager.text_color',
+            'description' => 'LLL:EXT:gdpr_extensions_com_youtube/Resources/Private/Language/locallang_db.xlf:tx_gdprextensionscomyoutube_domain_model_gdprmanager.text_color.description',
             'config' => [
                 'type' => 'input',
                 'size' => 30,

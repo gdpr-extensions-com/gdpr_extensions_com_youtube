@@ -1,6 +1,30 @@
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Poppins Regular'), local('Poppins-Regular'),
+    url('/typo3conf/ext/gdpr_extensions_com_youtube/Resources/Public/Fonts/Poppins-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Poppins Medium'), local('Poppins-Medium'),
+    url('/typo3conf/ext/gdpr_extensions_com_youtube/Resources/Public/Fonts/Poppins-Medium.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Poppins Bold'), local('Poppins-Bold'),
+    url('/typo3conf/ext/gdpr_extensions_com_youtube/Resources/Public/Fonts/Poppins-Bold.otf') format('opentype');
+}
 .warpper {
     display: flex;
     flex-direction: column;
+    font-family: 'Poppins';
 }
 
 .tab {

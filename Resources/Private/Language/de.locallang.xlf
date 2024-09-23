@@ -124,8 +124,8 @@
 						<target>Überschrift</target>
 				</trans-unit>
 				<trans-unit id="tx_gdprextensionscomyoutube_domain_model_gdprmanager.content" resname="tx_gdprextensionscomyoutube_domain_model_gdprmanager.content">
-						<source>Content</source>
-						<target>Inhalt</target>
+						<source>Body</source>
+						<target>Körper</target>
 				</trans-unit>
 				<trans-unit id="tx_gdprextensionscomyoutube_domain_model_gdprmanager.content.description" resname="tx_gdprextensionscomyoutube_domain_model_gdprmanager.content.description">
 						<source>Content</source>
@@ -160,7 +160,7 @@
 						<target>Hintergrundbild</target>
 				</trans-unit>
 				<trans-unit id="tx_gdprextensionscomyoutube_domain_model_gdprmanager.background_image_color" resname="tx_gdprextensionscomyoutube_domain_model_gdprmanager.background_image_color">
-						<source>Background Image Color</source>
+						<source>Background Color</source>
 						<target>Farbe des Hintergrundbilds</target>
 				</trans-unit>
 				<trans-unit id="tx_gdprextensionscomyoutube_domain_model_gdprmanager.background_image_color.description" resname="tx_gdprextensionscomyoutube_domain_model_gdprmanager.background_image_color.description">

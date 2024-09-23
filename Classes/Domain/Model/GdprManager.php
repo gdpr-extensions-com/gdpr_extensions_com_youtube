@@ -78,6 +78,13 @@ class GdprManager extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     protected $textColor = '';
 
     /**
+     * headingColor
+     *
+     * @var string
+     */
+    protected $headingColor = '';
+
+    /**
      * buttonTextColor
      *
      * @var string
@@ -345,6 +352,27 @@ class GdprManager extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     public function getTextColor()
     {
         return $this->textColor;
+    }
+
+    /**
+     * Returns the headingColor
+     *
+     * @return string
+     */
+    public function getHeadingColor()
+    {
+        return $this->headingColor;
+    }
+
+    /**
+     * Sets the headingColor
+     *
+     * @param string $headingColor
+     * @return void
+     */
+    public function setHeadingColor(string $headingColor)
+    {
+        $this->headingColor = $headingColor;
     }
 
     /**
